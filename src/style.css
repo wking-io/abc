@@ -1,0 +1,318 @@
+@tailwind base;
+
+*,
+*::before,
+*::after {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  @apply font-sans text-black;
+}
+
+.visually-hidden {
+  @apply fixed;
+  left: -99999px;
+  visability: hidden;
+}
+
+.link {
+  @apply underline font-semibold;
+}
+
+.link:hover {
+  @apply no-underline;
+}
+
+.link--light {
+  @apply text-white;
+}
+
+.link--light:hover {
+  @apply text-white;
+}
+
+.link--highlight {
+  @apply bg-no-repeat;
+  background-image: linear-gradient(theme('colors.black'), theme('colors.black'));
+  background-size: calc(100% - theme('spacing.8')) calc(100% - theme('spacing.8'));
+  background-position: theme('spacing.4') theme('spacing.4');
+}
+
+.link--highlight:hover {
+  background-image: linear-gradient(theme('colors.primary.dark'), theme('colors.primary.dark'));
+}
+
+.btn {
+  @apply text-white bg-black leading-none text-center inline-block py-3 px-8 font-semibold shadow cursor-pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.btn:hover:not(:disabled) {
+  @apply bg-grey-100 shadow-md;
+}
+
+.btn:disabled {
+  @apply opacity-50 cursor-not-allowed;
+}
+
+.btn--primary {
+  @apply bg-primary;
+  background-repeat: no-repeat;
+  transition: background-image 0.25s ease-in;
+}
+
+.btn--primary:hover:not(:disabled) {
+  @apply bg-primary-dark;
+}
+
+.btn--primary-light {
+  @apply bg-white text-primary;
+}
+
+.btn--primary-light:hover:not(:disabled) {
+  @apply bg-transparent border border-white text-white shadow-none;
+}
+
+.btn--outline {
+  @apply bg-transparent border border-black text-black shadow-none;
+}
+
+.btn--outline:hover:not(:disabled) {
+  @apply bg-black border border-black text-white;
+}
+
+.btn--outline-primary-light {
+  @apply bg-transparent border border-white text-white shadow-none;
+}
+
+.btn--outline-primary-light:hover:not(:disabled) {
+  @apply bg-white border border-white text-primary;
+}
+
+.btn--outline-light {
+  @apply bg-transparent border border-white text-white shadow-none;
+}
+
+.btn--outline-light:hover:not(:disabled) {
+  @apply bg-white border border-white text-black;
+}
+
+.btn--icon:hover .icon {
+  @apply border-primary;
+}
+
+.hamburger {
+  @apply w-6 h-6 relative block;
+}
+
+.hamburger span {
+  @apply absolute w-full bg-black;
+  top: 50%;
+  left: 0;
+  height: 2px;
+  transform: translateY(-50%);
+  transition: transform 0.2s ease-in-out;
+}
+
+.hamburger.hamburger--light span {
+  @apply bg-white;
+}
+
+.hamburger span:first-child {
+  top: calc(50% - 6px);
+}
+
+.hamburger span:last-child {
+  top: calc(50% + 6px);
+}
+
+[aria-expanded="true"] > .hamburger span:nth-child(2) {
+  @apply bg-white;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+[aria-expanded="true"] > .hamburger span:nth-child(3) {
+  @apply bg-white;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+[aria-expanded="true"] > .hamburger span:first-child,
+[aria-expanded="true"] > .hamburger span:last-child {
+  @apply opacity-0;
+}
+
+.select select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+@keyframes fromLeft {
+  from {
+    transform: translateX(-40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fromRight {
+  from {
+    transform: translateX(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fromTop {
+  from {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fromBottom {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes visibility {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+[data-animate-visibility="0"] {
+  animation: 0.5s ease-in-out 0.2s 1 both visibility;
+}
+
+[data-animate-visibility="1"] {
+  animation: 0.5s ease-in-out 0.4s 1 both visibility;
+}
+
+[data-animate-visibility="2"] {
+  animation: 0.5s ease-in-out 0.6s 1 both visibility;
+}
+
+[data-animate-from-left="0"] {
+  animation: 0.5s ease-in-out 0.2s 1 both fromLeft;
+}
+
+[data-animate-from-right="0"] {
+  animation: 0.5s ease-in-out 0.2s 1 both fromRight;
+}
+
+[data-animate-from-top="0"] {
+  animation: 0.5s ease-in-out 0.2s 1 both fromTop;
+}
+
+[data-animate-from-bottom="0"] {
+  animation: 0.5s ease-in-out 0.2s 1 both fromBottom;
+}
+
+[data-animate-from-left="1"] {
+  animation: 0.5s ease-in-out 0.4s 1 both fromLeft;
+}
+
+[data-animate-from-right="1"] {
+  animation: 0.5s ease-in-out 0.4s 1 both fromRight;
+}
+
+[data-animate-from-top="1"] {
+  animation: 0.5s ease-in-out 0.4s 1 both fromTop;
+}
+
+[data-animate-from-bottom="1"] {
+  animation: 0.5s ease-in-out 0.4s 1 both fromBottom;
+}
+
+[data-animate-from-left="2"] {
+  animation: 0.5s ease-in-out 0.6s 1 both fromLeft;
+}
+
+[data-animate-from-right="2"] {
+  animation: 0.5s ease-in-out 0.6s 1 both fromRight;
+}
+
+[data-animate-from-top="2"] {
+  animation: 0.5s ease-in-out 0.6s 1 both fromTop;
+}
+
+[data-animate-from-bottom="2"] {
+  animation: 0.5s ease-in-out 0.6s 1 both fromBottom;
+}
+
+.video-overlay-dark {
+  background-image: linear-gradient(110deg, rgba(theme('colors.grey.900'), 1), rgba(theme('colors.grey.900'), 0));
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@responsive {
+  .aspect-none::before {
+    @apply hidden;
+  }
+
+  .aspect-16\:9,
+  .aspect-5\:3,
+  .aspect-4\:3 {
+    position: relative;
+  }
+
+  .aspect-16\:9::before,
+  .aspect-5\:3::before,
+  .aspect-4\:3::before {
+    content: "";
+    display: block;
+    width: 100%;
+  }
+
+  .aspect-16\:9::before {
+    padding-top: calc((9 / 16) * 100%);
+  }
+
+  .aspect-5\:3::before {
+    padding-top: calc((3 / 5) * 100%);
+  }
+
+  .aspect-4\:3::before {
+    padding-top: calc((3 / 4) * 100%);
+  }
+
+  .aspect-content-0 {
+    position: relative !important;
+  }
+
+  .aspect-content {
+    bottom: 0;
+    left: 0;
+    position: absolute !important;
+    right: 0;
+    top: 0;
+  }
+
+  .bg-dark-o {
+    background-image: linear-gradient(rgba(theme("colors.black"), 0.9), rgba(theme("colors.black"), 0.9));
+  }
+}
+
+@tailwind utilities;
