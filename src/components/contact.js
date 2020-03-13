@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { validate } from 'email-validator';
 import VisuallyHidden from '@reach/visually-hidden';
 
-import Layout from '../components/layout';
-import SEO from '../components/seo';
-import { Field, Textarea } from '../components/form';
+import Layout from './layout';
+import SEO from './seo';
+import { Field, Textarea } from './form';
 
 const verify = ({ name, phone, email, message }) =>
   validate(email) && [ message, name, phone ].every((field) => field.length > 0);

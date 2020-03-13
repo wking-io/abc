@@ -50,7 +50,7 @@ html {
 }
 
 .btn:hover:not(:disabled) {
-  @apply bg-grey-100 shadow-md;
+  @apply bg-grey shadow-md;
 }
 
 .btn:disabled {
@@ -262,7 +262,7 @@ html {
 }
 
 .video-overlay-dark {
-  background-image: linear-gradient(110deg, rgba(theme('colors.grey.900'), 1), rgba(theme('colors.grey.900'), 0));
+  background-image: linear-gradient(110deg, rgba(theme('colors.black'), 1), rgba(theme('colors.black'), 0));
   background-size: cover;
   background-repeat: no-repeat;
 }

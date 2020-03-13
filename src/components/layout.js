@@ -5,10 +5,10 @@ import { Helmet } from "react-helmet"
 import Header from "./header"
 import Footer from "./footer"
 
-const Layout = ({ children, label }) => (
+const Layout = ({ children }) => (
   <>
     <Helmet>
-      <link rel="stylesheet" href="https://use.typekit.net/qnu4qpv.css" />
+      <link rel="stylesheet" href="https://use.typekit.net/zof0vwu.css" />
     </Helmet>
     <Header />
     {children}

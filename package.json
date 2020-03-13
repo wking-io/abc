@@ -16,6 +16,7 @@
     "gatsby-plugin-sharp": "^2.2.9",
     "gatsby-plugin-sitemap": "2.2.14",
     "gatsby-plugin-stylelint": "3.2.0",
+    "gatsby-plugin-web-font-loader": "1.0.4",
     "gatsby-source-filesystem": "^2.1.6",
     "gatsby-transformer-json": "2.2.6",
     "gatsby-transformer-sharp": "^2.2.4",
@@ -26,7 +27,6 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
-    "gatsby-plugin-web-font-loader": "1.0.4",
     "postcss-hexrgba": "1.0.2",
     "prettier": "^1.18.2",
     "stylelint": "10.1.0",

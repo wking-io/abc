@@ -4,14 +4,14 @@ module.exports = {
     titleTemplate: '%s | AB Consulting',
     description:
       'AB Consulting is a financial services organization focused on making things easy. We are obsessed with simplifying and streamlining⁠—for our customers, financial partners, employees, and community advocates.',
-    siteUrl: '',
+    siteUrl: 'https://abconsulting.net',
     image: {
       src: '/images/favicon.png',
       alt: 'AB Consulting Logo',
       width: '1200',
       height: '900',
     },
-    twitterUsername: '@TaxxWiz',
+    twitterUsername: '@abconsulting',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -47,13 +47,5 @@ module.exports = {
       },
     },
     'gatsby-plugin-sitemap',
-    {
-      resolve: 'gatsby-plugin-web-font-loader',
-      options: {
-        typekit: {
-          id: 'zof0vwu',
-        },
-      },
-    },
   ],
 };
