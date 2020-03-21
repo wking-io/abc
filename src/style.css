@@ -11,10 +11,12 @@ html {
   @apply font-sans text-black;
 }
 
-.visually-hidden {
-  @apply fixed;
-  left: -99999px;
-  visability: hidden;
+.sticky-menu {
+  bottom: 100%;
+}
+
+.sticky-menu--show {
+  transform: translateY(100%);
 }
 
 .link {
@@ -108,7 +110,7 @@ html {
 }
 
 .hamburger span {
-  @apply absolute w-full bg-black;
+  @apply absolute w-full bg-primary;
   top: 50%;
   left: 0;
   height: 2px;
@@ -121,11 +123,11 @@ html {
 }
 
 .hamburger span:first-child {
-  top: calc(50% - 6px);
+  top: calc(50% - 4px);
 }
 
 .hamburger span:last-child {
-  top: calc(50% + 6px);
+  top: calc(50% + 4px);
 }
 
 [aria-expanded="true"] > .hamburger span:nth-child(2) {
