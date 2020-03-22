@@ -19,6 +19,76 @@ html {
   transform: translateY(100%);
 }
 
+.main-logo {
+  flex: 2 1 auto;
+}
+
+.hero-heading {
+  @apply text-5xl leading-tight;
+}
+
+.hero-description {
+  @apply text-base;
+}
+
+@screen md {
+  .hero-heading {
+    @apply text-5xl;
+  }
+
+  .hero-description {
+    @apply text-xl;
+  }
+}
+
+@screen lg {
+  .hero-heading {
+    font-size: 6vw;
+  }
+
+  .hero-description {
+    @apply text-2xl;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .hero-heading {
+    font-size: 78px;
+  }
+}
+
+.feature-number {
+  @apply absolute left-0 bottom-0 font-bold text-primary z-20 leading-none;
+  font-size: 64vw;
+  margin: 0 0 -13vw 1vw;
+}
+
+@screen md {
+  .feature-number {
+    font-size: 44vw;
+    margin: 0 0 -9vw 1vw;
+  }
+}
+
+@screen lg {
+  .feature-number {
+    font-size: 31vw;
+    margin: 0 0 -6vw 1vw;
+  }
+}
+
+.color-list li {
+  @apply relative pl-6;
+  content: '\2022';
+}
+
+.color-list li:before {
+  @apply absolute text-primary text-3xl leading-none left-0;
+  content: '\2022';
+  top: 40%;
+  transform: translateY(-50%);
+}
+
 .link {
   @apply underline font-semibold;
 }
@@ -114,8 +184,6 @@ html {
   top: 50%;
   left: 0;
   height: 2px;
-  transform: translateY(-50%);
-  transition: transform 0.2s ease-in-out;
 }
 
 .hamburger.hamburger--light span {
@@ -123,26 +191,19 @@ html {
 }
 
 .hamburger span:first-child {
-  top: calc(50% - 4px);
+  transform: translateY(calc(-50% - 4px));
 }
 
 .hamburger span:last-child {
-  top: calc(50% + 4px);
+  transform: translateY(calc(-50% + 4px));
 }
 
-[aria-expanded="true"] > .hamburger span:nth-child(2) {
-  @apply bg-white;
+[aria-expanded="true"] > .hamburger span:first-child {
   transform: translateY(-50%) rotate(45deg);
 }
 
-[aria-expanded="true"] > .hamburger span:nth-child(3) {
-  @apply bg-white;
-  transform: translateY(-50%) rotate(-45deg);
-}
-
-[aria-expanded="true"] > .hamburger span:first-child,
 [aria-expanded="true"] > .hamburger span:last-child {
-  @apply opacity-0;
+  transform: translateY(-50%) rotate(-45deg);
 }
 
 .select select {

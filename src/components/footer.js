@@ -6,7 +6,7 @@ const Footer = () => (
   <footer className="bg-black text-white pt-32 pb-16">
     <div>Logo here</div>
     <nav>
-      <ul className="flex items-center justify-center">
+      <ul className="flex flex-wrap items-center justify-center">
         <li className="border-r-2 border-white">
           <Link className="px-6 py-0 m-0 leading-none block hover:text-primary" to="tel:205-482-5045">
             205-482-5045

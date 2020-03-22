@@ -5,70 +5,28 @@ import Img from 'gatsby-image';
 export const Image = ({ image, ...props }) => {
   const data = useStaticQuery(graphql`
     query {
-      logo: file(relativePath: { eq: "images/logo.png" }) {
+      hero: file(relativePath: { eq: "images/hero.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 1440) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
-      taxxwiz: file(relativePath: { eq: "images/taxxwiz.png" }) {
+      featureOne: file(relativePath: { eq: "images/01.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
-      hiring: file(relativePath: { eq: "images/hiring.jpg" }) {
+      featureTwo: file(relativePath: { eq: "images/hero.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 1200) {
+          fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
-      feature: file(relativePath: { eq: "images/taxxwiz-square.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 800) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-      easy: file(relativePath: { eq: "images/easy-simple.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 800) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-      refund: file(relativePath: { eq: "images/refund.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 800) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-      fast: file(relativePath: { eq: "images/fast-secure.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 800) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-      laptop: file(relativePath: { eq: "images/laptop.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 800) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-      efile: file(relativePath: { eq: "images/efile.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 400) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-      heroMobile: file(relativePath: { eq: "images/hero-mobile.jpg" }) {
+      featureThree: file(relativePath: { eq: "images/03.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid_withWebp
