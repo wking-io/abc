@@ -5,6 +5,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import { LogoIcon } from '../components/icons';
 import { Image } from '../components/images';
+import { ContactForm } from '../components/form';
 
 const IndexPage = () => {
   return (
@@ -15,7 +16,7 @@ const IndexPage = () => {
           <Image image="hero" className="object-cover w-full h-full" />
           <div className="absolute inset-0 w-full h-full bg-dark-o" />
         </div>
-        <div className="relative text-center max-w-3xl mx-auto w-5/6 pt-24">
+        <div className="relative text-center max-w-4xl mx-auto w-5/6 pt-24">
           <h2 className="hero-heading uppercase font-bold">Our Aim Is Your Ease.</h2>
           <p className="hero-description font-serif lg:w-9/12 mx-auto mt-6 lg:mt-2">
             We provide hassle-free, turnkey financial services to support, simplify and streamline your business.
@@ -56,13 +57,13 @@ const IndexPage = () => {
         </div>
       </section>
       <section className="py-16 md:py-24 lg:py-32">
-        <div class="flex flex-col lg:flex-row-reverse py-8 md:py-12 xl:py-16">
+        <div className="flex flex-col lg:flex-row-reverse py-8 md:py-12 xl:py-16">
           <div className="w-full lg:w-1/2 flex-shrink-0 relative overflow-hidden" />
           <h2 className="uppercase text-3xl md:text-4xl xl:text-5xl font-bold leading-tight px-6 md:pr-0 lg:pl-16 xl:pl-24 max-w-2xl mx-auto">
             our mission is as easy as <span className="text-primary">one, two, three.</span>
           </h2>
         </div>
-        <div className="flex flex-col lg:flex-row-reverse py-8 md:py-12 xl:py-16">
+        <div className="flex flex-col lg:flex-row-reverse lg:items-center py-8 md:py-12 xl:py-16">
           <div className="w-full lg:w-1/2 flex-shrink-0 relative overflow-hidden">
             <p className="feature-number">1</p>
             <Image image="featureOne" />
@@ -74,11 +75,66 @@ const IndexPage = () => {
               experienced partner focused on meeting your financial and procurement needs. Whether a single asset or
               portfolio, we will strategize to ensure a successful acquisition.
             </p>
-            <p className="md:text-lg font-serif text-primary mt-4">Initiative Strategies</p>
+            <p className="md:text-xl font-serif text-primary mt-4 font-bold">Initiative Strategies</p>
             <ul className="color-list mt-4">
               <li>Procurement process development</li>
               <li>Payment and financial structure</li>
             </ul>
+          </div>
+        </div>
+        <div className="flex flex-col lg:flex-row lg:items-center py-8 md:py-12 xl:py-16">
+          <div className="w-full lg:w-1/2 flex-shrink-0 relative overflow-hidden">
+            <p className="feature-number feature-number--reverse">2</p>
+            <Image image="featureTwo" />
+          </div>
+          <div className="flex-1 px-6 lg:px-16 xl:px-24 max-w-2xl mx-auto mt-6 md:mt-12 lg:mt-0">
+            <h3 className="text-3xl tracking-tighter leading-tight">We simplify your business’s financial plan.</h3>
+            <p className="md:text-lg font-serif mt-6">
+              Once you have the equipment you need, we then streamline and simplify every unique and complex financial
+              scenario and setup of your business so that you can focus on your business.
+            </p>
+            <p className="md:text-xl font-serif text-primary mt-4 font-bold">Initiative Strategies</p>
+            <ul className="color-list mt-4">
+              <li>Custom reporting & data analytics</li>
+              <li>Minority spending</li>
+              <li>Credit card processing</li>
+              <li>Receivable Financing</li>
+            </ul>
+          </div>
+        </div>
+        <div className="flex flex-col lg:flex-row-reverse lg:items-center py-8 md:py-12 xl:py-16">
+          <div className="w-full lg:w-1/2 flex-shrink-0 relative overflow-hidden">
+            <p className="feature-number">3</p>
+            <Image image="featureThree" />
+          </div>
+          <div className="flex-1 px-6 lg:px-16 xl:px-24 max-w-2xl mx-auto mt-6 md:mt-12 lg:mt-0">
+            <h3 className="text-3xl tracking-tighter leading-tight">
+              We strengthen the families in our sphere of influence.
+            </h3>
+            <p className="md:text-lg font-serif mt-6">
+              Our ultimate vision is to impact people by serving them. Our end goal is to strengthen the families of
+              every individual connected to our organization by investing time and resources into the ABC community.
+            </p>
+            <p className="md:text-xl font-serif text-primary mt-4 font-bold">Initiative Strategies</p>
+            <ul className="color-list mt-4">
+              <li>Relationship building</li>
+              <li>Financial and philanthropic contributions to local family-strengthening organizations</li>
+              <li>Stakeholder incentives</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section className="bg-primary text-white py-16 md:py-24 lg:py-32">
+        <div className="px-6 md:px-16 max-w-6xl mx-auto flex flex-col items-center">
+          <h2 className="text-3xl md:text-5xl lg:text-6xl uppercase leading-tight text-center">
+            We are ready to serve you.
+          </h2>
+          <p className="md:text-lg lg:text-xl max-w-2xl mx-auto font-serif mt-2 text-center">
+            We would be honored to connect with you and tailor a plan for your business's financial and procurement
+            needs.
+          </p>
+          <div className="w-full max-w-3xl mx-auto mt-4">
+            <ContactForm />
           </div>
         </div>
       </section>

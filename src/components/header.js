@@ -16,7 +16,7 @@ const Header = () => {
     <Menu>
       {({ isOpen }) => (
         <>
-          <header ref={menuRef} className={`sticky-menu z-20 fixed flex items-center justify-between left-0 w-full py-1 px-6 md:px-16 bg-dark-o ${showSticky ? 'sticky-menu--show' : ''}`}>
+          <header ref={menuRef} className={`sticky-menu z-40 fixed flex items-center justify-between left-0 w-full py-1 px-6 md:px-16 bg-dark-o ${showSticky ? 'sticky-menu--show' : ''}`}>
             <Link className="block relative z-50 flex items-center" to="/">
               <LogoIcon className="h-6 w-auto mr-4 text-primary" />
               <LogoName className="h-4 w-auto text-white" />
