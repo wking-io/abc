@@ -30,6 +30,16 @@ const IndexPage = () => {
         </div>
       </section>
       <section className="relative px-6 md:px-16 max-w-5xl mx-auto py-16 md:py-24 lg:py-32 flex justify-end">
+        <svg
+          className="mx-16 lg:mx-0 hidden md:block graphic-one left-0 w-1/3 lg:w-5/12 text-primary absolute"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 100 195"
+        >
+          <circle cx="6" cy="6" r="6" className="fill-current" />
+          <circle cx="70" cy="90" r="10" className="fill-current" />
+          <circle cx="25" cy="189" r="6" className="fill-current" />
+          <polyline points="6,6 70,90 25,189" fill="none" stroke="#d13a27" />
+        </svg>
         <div className="md:w-7/12">
           <h2 className="text-3xl md:text-5xl lg:text-6xl uppercase leading-tight">
             Easy With <span className="text-primary">ABC.</span>
@@ -47,7 +57,7 @@ const IndexPage = () => {
           </Link>
         </div>
       </section>
-      <section className="bg-black text-white py-16 md:py-24 lg:py-32">
+      <section className="bg-black text-white py-16 md:py-32 lg:py-40">
         <div className="px-6 md:px-16 max-w-6xl mx-auto flex flex-col items-center">
           <LogoIcon className="h-auto w-16 md:w-24 lg:w-32 mr-4 text-primary" />
           <h2 className="text-2xl md:text-3xl lg:text-4xl flex flex-col leading-tight text-center mt-8 md:mt-12">
@@ -56,7 +66,16 @@ const IndexPage = () => {
           </h2>
         </div>
       </section>
-      <section className="py-16 md:py-24 lg:py-32">
+      <section className="py-16 md:py-24 lg:py-32 relative">
+        <svg
+          className="-mt-20 px-16 hidden lg:block top-0 right-0 w-1/2 text-primary absolute"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 200 120"
+        >
+          <circle cx="192" cy="8" r="8" className="fill-current" />
+          <circle cx="12" cy="108" r="12" className="fill-current" />
+          <polyline points="192,8 12,108" fill="none" stroke="#d13a27" />
+        </svg>
         <div className="flex flex-col lg:flex-row-reverse py-8 md:py-12 xl:py-16">
           <div className="w-full lg:w-1/2 flex-shrink-0 relative overflow-hidden" />
           <h2 className="uppercase text-3xl md:text-4xl xl:text-5xl font-bold leading-tight px-6 md:pr-0 lg:pl-16 xl:pl-24 max-w-2xl mx-auto">

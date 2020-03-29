@@ -94,6 +94,11 @@ html {
   transform: translateY(-50%);
 }
 
+.graphic-one {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .link {
   @apply underline font-semibold;
 }
