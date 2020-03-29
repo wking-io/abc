@@ -99,90 +99,8 @@ html {
   transform: translateY(-50%);
 }
 
-.link {
-  @apply underline font-semibold;
-}
-
-.link:hover {
-  @apply no-underline;
-}
-
-.link--light {
-  @apply text-white;
-}
-
-.link--light:hover {
-  @apply text-white;
-}
-
-.link--highlight {
-  @apply bg-no-repeat;
-  background-image: linear-gradient(theme('colors.black'), theme('colors.black'));
-  background-size: calc(100% - theme('spacing.8')) calc(100% - theme('spacing.8'));
-  background-position: theme('spacing.4') theme('spacing.4');
-}
-
-.link--highlight:hover {
-  background-image: linear-gradient(theme('colors.primary.dark'), theme('colors.primary.dark'));
-}
-
-.btn {
-  @apply text-white bg-black leading-none text-center inline-block py-3 px-8 font-semibold shadow cursor-pointer;
-  transition: all 0.1s ease-in-out;
-}
-
-.btn:hover:not(:disabled) {
-  @apply bg-grey shadow-md;
-}
-
-.btn:disabled {
-  @apply opacity-50 cursor-not-allowed;
-}
-
-.btn--primary {
-  @apply bg-primary;
-  background-repeat: no-repeat;
-  transition: background-image 0.25s ease-in;
-}
-
-.btn--primary:hover:not(:disabled) {
-  @apply bg-primary-dark;
-}
-
-.btn--primary-light {
-  @apply bg-white text-primary;
-}
-
-.btn--primary-light:hover:not(:disabled) {
-  @apply bg-transparent border border-white text-white shadow-none;
-}
-
-.btn--outline {
-  @apply bg-transparent border border-black text-black shadow-none;
-}
-
-.btn--outline:hover:not(:disabled) {
-  @apply bg-black border border-black text-white;
-}
-
-.btn--outline-primary-light {
-  @apply bg-transparent border border-white text-white shadow-none;
-}
-
-.btn--outline-primary-light:hover:not(:disabled) {
-  @apply bg-white border border-white text-primary;
-}
-
-.btn--outline-light {
-  @apply bg-transparent border border-white text-white shadow-none;
-}
-
-.btn--outline-light:hover:not(:disabled) {
-  @apply bg-white border border-white text-black;
-}
-
-.btn--icon:hover .icon {
-  @apply border-primary;
+.submit:disabled {
+  @apply bg-black opacity-50 pointer-events-none;
 }
 
 .hamburger {
@@ -332,12 +250,6 @@ html {
 
 [data-animate-from-bottom="2"] {
   animation: 0.5s ease-in-out 0.6s 1 both fromBottom;
-}
-
-.video-overlay-dark {
-  background-image: linear-gradient(110deg, rgba(theme('colors.black'), 1), rgba(theme('colors.black'), 0));
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 @responsive {

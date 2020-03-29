@@ -80,19 +80,11 @@ export const ContactForm = () => {
           update={updateEmail}
           dark
         />
-        <Field
-          name="email"
-          label="Email Address"
-          placeholder="Write email address here..."
-          value={email}
-          update={updateEmail}
-          dark
-        />
       </div>
       <Textarea name="message" label="Message" value={message} update={updateMessage} />
       <input
         type="submit"
-        className="self-end bg-black hover:bg-grey rounded-lg py-3 px-6 font-bold mt-6 md:mt-8 lg:mt-12 inline-block text-white cursor-pointer"
+        className="submit self-end bg-black hover:bg-grey rounded-lg py-3 px-6 font-bold mt-6 md:mt-8 lg:mt-12 inline-block text-white cursor-pointer"
         value="Send Message"
         disabled={!isValid}
       />

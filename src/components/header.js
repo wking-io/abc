@@ -30,7 +30,7 @@ const Header = ({ light }) => {
             </MenuButton>
           </header>
           <header ref={menuRef} className="absolute z-20 top-0 left-0 right-0 flex items-center justify-between w-full pt-4 md:pt-16 lg:pt-24 px-6 md:px-16">
-            <p class="hidden md:block flex-1 text-primary font-bold">205-482-5045</p>
+            <p className="hidden md:block flex-1 text-primary font-bold">205-482-5045</p>
             <Link className="main-logo block relative z-50 flex md:flex-col items-center" to="/">
               <LogoIcon className="h-6 md:h-8 w-auto text-primary mr-4 md:mr-0" />
               <LogoName className={`h-4 md:h-6 w-auto ${light ? 'text-black' : 'text-white'} md:mt-6`} />
