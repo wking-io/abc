@@ -5,12 +5,12 @@ import { Helmet } from "react-helmet"
 import Header from "./header"
 import Footer from "./footer"
 
-const Layout = ({ children }) => (
+const Layout = ({ light, children }) => (
   <>
     <Helmet>
       <link rel="stylesheet" href="https://use.typekit.net/zof0vwu.css" />
     </Helmet>
-    <Header />
+    <Header light={light} />
     {children}
     <Footer />
   </>

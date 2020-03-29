@@ -29,7 +29,7 @@ const IndexPage = () => {
           </Link>
         </div>
       </section>
-      <section className="relative px-6 md:px-16 max-w-5xl mx-auto py-16 md:py-24 lg:py-32 flex justify-end">
+      <section id="about" className="relative px-6 md:px-16 max-w-5xl mx-auto py-16 md:py-24 lg:py-32 flex justify-end">
         <svg
           className="mx-16 lg:mx-0 hidden md:block graphic-one left-0 w-1/3 lg:w-5/12 text-primary absolute"
           xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +57,7 @@ const IndexPage = () => {
           </Link>
         </div>
       </section>
-      <section className="bg-black text-white py-16 md:py-32 lg:py-40">
+      <section id="mission" className="bg-black text-white py-16 md:py-32 lg:py-40">
         <div className="px-6 md:px-16 max-w-6xl mx-auto flex flex-col items-center">
           <LogoIcon className="h-auto w-16 md:w-24 lg:w-32 mr-4 text-primary" />
           <h2 className="text-2xl md:text-3xl lg:text-4xl flex flex-col leading-tight text-center mt-8 md:mt-12">
@@ -143,7 +143,7 @@ const IndexPage = () => {
           </div>
         </div>
       </section>
-      <section className="bg-primary text-white py-16 md:py-24 lg:py-32">
+      <section id="connect" className="bg-primary text-white py-16 md:py-24 lg:py-32">
         <div className="px-6 md:px-16 max-w-6xl mx-auto flex flex-col items-center">
           <h2 className="text-3xl md:text-5xl lg:text-6xl uppercase leading-tight text-center">
             We are ready to serve you.

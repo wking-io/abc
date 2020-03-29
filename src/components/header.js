@@ -6,7 +6,7 @@ import VisuallyHidden from '@reach/visually-hidden';
 import { LogoIcon, LogoName } from './icons';
 import { useElBottom } from '../utils';
 
-const Header = () => {
+const Header = ({ light }) => {
   const menuRef = useRef(null);
   const [ showSticky, updateShowSticky ] = useState(false);
   useElBottom((pos) => {
@@ -33,7 +33,7 @@ const Header = () => {
             <p class="hidden md:block flex-1 text-primary font-bold">205-482-5045</p>
             <Link className="main-logo block relative z-50 flex md:flex-col items-center" to="/">
               <LogoIcon className="h-6 md:h-8 w-auto text-primary mr-4 md:mr-0" />
-              <LogoName className="h-4 md:h-6 w-auto text-white md:mt-6" />
+              <LogoName className={`h-4 md:h-6 w-auto ${light ? 'text-black' : 'text-white'} md:mt-6`} />
             </Link>
             <div className="flex-1 flex justify-end">
               <MenuButton className="p-4 -mr-4 relative z-50">
