@@ -21,16 +21,22 @@ const Footer = () => (
         </li>
         <li className="w-full md:w-auto text-center mt-4 lg:border-r-2 lg:border-white">
           <Link className="px-6 py-0 m-0 leading-none block hover:text-primary" to="mailto:info@abconsulting.net">
-            info@abconsulting.net
+            info@easywithabc.com
           </Link>
         </li>
         <li className="mt-4 md:w-1/2 md:text-right lg:text-left lg:w-auto border-r-2 border-white">
-          <Link className="px-6 py-0 m-0 leading-none block hover:text-primary" to="https://google.com">
+          <Link
+            className="px-6 py-0 m-0 leading-none block hover:text-primary"
+            to="https://www.instagram.com/easywithabc/"
+          >
             Instagram
           </Link>
         </li>
         <li className="mt-4 md:w-1/2 lg:w-auto">
-          <Link className="px-6 py-0 m-0 leading-none block hover:text-primary" to="https://google.com">
+          <Link
+            className="px-6 py-0 m-0 leading-none block hover:text-primary"
+            to="https://www.facebook.com/ab-consulting-112665530382219"
+          >
             Facebook
           </Link>
         </li>

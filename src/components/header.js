@@ -69,10 +69,10 @@ const Header = ({ light }) => {
               <MenuLink href="#connect" className="font-bold text-3xl uppercase hover:text-primary p-4 -mr-4 inline-block">
                 Connect
               </MenuLink>
-              <MenuLink href="https://instagram.com" className="font-bold uppercase hover:text-primary mt-6 p-1 -mr-1 inline-block">
+              <MenuLink href="https://www.instagram.com/easywithabc/" className="font-bold uppercase hover:text-primary mt-6 p-1 -mr-1 inline-block">
                 Instagram
               </MenuLink>
-              <MenuLink href="https://facebook.com" className="font-bold uppercase hover:text-primary p-1 -mr-1 inline-block">
+              <MenuLink href="https://www.facebook.com/ab-consulting-112665530382219" className="font-bold uppercase hover:text-primary p-1 -mr-1 inline-block">
                 Facebook
               </MenuLink>
             </MenuList>
