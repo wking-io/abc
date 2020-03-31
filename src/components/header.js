@@ -21,7 +21,7 @@ const Header = ({ light }) => {
               <LogoIcon className="h-6 w-auto mr-4 text-primary" />
               <LogoName className="h-4 w-auto text-white" />
             </Link>
-            <MenuButton className="p-4 -mr-4 relative z-50">
+            <MenuButton className="p-4 -mr-4 relative z-50 hover:outline-none focus:outline-none">
               <VisuallyHidden>{isOpen ? 'Close' : 'Open'} Menu</VisuallyHidden>
               <span className={`hamburger`} aria-hidden>
                 <span />
@@ -36,7 +36,7 @@ const Header = ({ light }) => {
               <LogoName className={`h-4 md:h-6 w-auto ${light ? 'text-black' : 'text-white'} md:mt-6`} />
             </Link>
             <div className="flex-1 flex justify-end">
-              <MenuButton className="p-4 -mr-4 relative z-50">
+              <MenuButton className="p-4 -mr-4 relative z-50 hover:outline-none focus:outline-none">
                 <VisuallyHidden>{isOpen ? 'Close' : 'Open'} Menu</VisuallyHidden>
                 <span className={`hamburger`} aria-hidden>
                   <span />
@@ -52,7 +52,7 @@ const Header = ({ light }) => {
                   <LogoIcon className="h-6 w-auto mr-4 text-primary" />
                   <LogoName className="h-4 w-auto text-white" />
                 </Link>
-                <MenuButton className="p-4 -mr-4">
+                <MenuButton className="p-4 -mr-4 hover:outline-none focus:outline-none">
                   <VisuallyHidden>{isOpen ? 'Close' : 'Open'} Menu</VisuallyHidden>
                   <span className={`hamburger`} aria-hidden>
                     <span />
@@ -60,19 +60,19 @@ const Header = ({ light }) => {
                   </span>
                 </MenuButton>
               </div>
-              <MenuLink href="#about" className="font-bold text-3xl uppercase hover:text-primary p-4 -mr-4 inline-block">
+              <MenuLink href="#about" className="font-bold text-3xl uppercase hover:text-primary focus:text-primary p-4 -mr-4 inline-block hover:outline-none focus:outline-none">
                 About
               </MenuLink>
-              <MenuLink href="#mission" className="font-bold text-3xl uppercase hover:text-primary p-4 -mr-4 inline-block">
+              <MenuLink href="#mission" className="font-bold text-3xl uppercase hover:text-primary focus:text-primary p-4 -mr-4 inline-block hover:outline-none focus:outline-none">
                 Mission
               </MenuLink>
-              <MenuLink href="#connect" className="font-bold text-3xl uppercase hover:text-primary p-4 -mr-4 inline-block">
+              <MenuLink href="#connect" className="font-bold text-3xl uppercase hover:text-primary focus:text-primary p-4 -mr-4 inline-block hover:outline-none focus:outline-none">
                 Connect
               </MenuLink>
-              <MenuLink href="https://www.instagram.com/easywithabc/" className="font-bold uppercase hover:text-primary mt-6 p-1 -mr-1 inline-block">
+              <MenuLink href="https://www.instagram.com/easywithabc/" className="font-bold uppercase hover:text-primary focus:text-primary mt-6 p-1 -mr-1 inline-block hover:outline-none focus:outline-none">
                 Instagram
               </MenuLink>
-              <MenuLink href="https://www.facebook.com/ab-consulting-112665530382219" className="font-bold uppercase hover:text-primary p-1 -mr-1 inline-block">
+              <MenuLink href="https://www.facebook.com/ab-consulting-112665530382219" className="font-bold uppercase hover:text-primary focus:text-primary p-1 -mr-1 inline-block hover:outline-none focus:outline-none">
                 Facebook
               </MenuLink>
             </MenuList>
