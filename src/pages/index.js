@@ -117,7 +117,7 @@ const IndexPage = () => {
               <li>Custom reporting & data analytics</li>
               <li>Minority spending</li>
               <li>Credit card processing</li>
-              <li>Receivable Financing</li>
+              <li>Receivables financing</li>
             </ul>
           </div>
         </div>
