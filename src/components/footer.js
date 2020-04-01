@@ -17,7 +17,7 @@ const Footer = () => (
           </Link>
         </li>
         <li className="w-full md:w-auto text-center mt-4 md:border-r-2 md:border-white">
-          <p className="px-6 py-0 m-0 leading-none block">PO Box 85, Hoover, Alabama 35243</p>
+          <p className="px-6 py-0 m-0 leading-none block">1 Chase Corporate Drive Unit 400, Hoover, Alabama 35244</p>
         </li>
         <li className="w-full md:w-auto text-center mt-4 lg:border-r-2 lg:border-white">
           <Link className="px-6 py-0 m-0 leading-none block hover:text-primary" to="mailto:info@abconsulting.net">
